@@ -10,11 +10,32 @@
         android:gravity="center"
         android:text="Moi c'est Thibault" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="146dp"
-        android:layout_height="96dp"
-        android:text="Button1" />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Toast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ToastCreator"
+            android:text="Toast" />
+
+        <Button
+            android:id="@+id/Notif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NotifCreator"
+            android:text="Notif" />
+
+        <Button
+            android:id="@+id/Dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="DialogCreator"
+            android:text="Dialog" />
+    </LinearLayout>
 
 </LinearLayout>
 
